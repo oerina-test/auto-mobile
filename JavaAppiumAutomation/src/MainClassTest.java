@@ -21,4 +21,24 @@ public class MainClassTest extends MainClass
             System.out.println("Тест 2 работает");
         }
 }
+@Test
+    public void  testGetClassString (){
+    if (this.getClassString().contains("Hello"))
+    {
+        System.out.println("строка Hello найдена");
+        if (this.getClassString().contains("hello"))
+        {
+            System.out.println("строка hello найдена");
+        }
+    }
+    else {
+        System.out.println("ошибка");
+    }
+
+
+
+
+    }
+
+
 }
