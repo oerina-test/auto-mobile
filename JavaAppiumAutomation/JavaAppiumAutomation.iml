@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="java-client-4.1.2" level="project" />
-    <orderEntry type="library" name="Libs" level="project" />
+    <orderEntry type="library" exported="" name="java-client-4.1.2" level="project" />
+    <orderEntry type="library" exported="" name="Libs" level="project" />
   </component>
 </module>

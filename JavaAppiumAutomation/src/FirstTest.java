@@ -11,27 +11,29 @@ public class FirstTest {
     private AppiumDriver driver;
 
     @Before
-    public void setUp() throws Exception {
 
+    public void setUp() throws Exception
+    {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("platformName","Android");
-        capabilities.setCapability("deviceName","AndroidTestDevice");
-        capabilities.setCapability("platformVersion","8.1");
-        capabilities.setCapability("automationName","Appium");
-        capabilities.setCapability("appPackage","org.wikipedia");
-        capabilities.setCapability("appActivity",".onboarding.InitialOnboardingActivity");
-        capabilities.setCapability("app","C:\Users\Developer\Desktop\apks\org.wikipedia.apk");
+        capabilities.setCapability("platformName", "Android");
+        capabilities.setCapability("deviceName", "AndroidTestDevice");
+        capabilities.setCapability("platformVersion", "8.0");
+        capabilities.setCapability("automationName", "Appium");
+        capabilities.setCapability("appPackage", "org.wikipedia");
+        capabilities.setCapability("appActivity", ".onboarding.InitialOnboardingActivity");
+        capabilities.setCapability("app", "C:/Users/Developer/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
 
-driver = new AndroidDriver(new URL(  "http://127.0.0.1:4723/wd/hub"), capabilities);
-@After
+        driver = new AndroidDriver (new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     }
-    public void tearDown() {
-        driver.quit();
+@After
+    public void tearDown()
+    {
+       driver.quit();
     }
     @Test
-    public void firstTest(){
+    public void firstTest()
+    {
         System.out.println("First test run");
     }
-
     }
 
